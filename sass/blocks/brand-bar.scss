@@ -1,0 +1,100 @@
+.brand-bar {
+	width: 100%;
+	height: 105px;
+	box-shadow: 1px 2px 2px #b7b7b7;
+	display: flex;
+	justify-content: center;
+	position: relative;
+
+	.brand-bar__wrapper {
+		width: 1430px;
+		padding-left: 100px;
+		padding-right: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.brand-bar__text {
+			width: 408px;
+
+			h3 {
+				color: #000;
+				font-family: Raleway;
+				font-size: 23px;
+				margin-bottom: -8px;
+			}
+
+			p {
+				color: #86878b;
+				font-family: Ralway;
+			}
+		}
+
+		.brand-bar__icons {
+			a {
+				transition: .3s;
+				color: #ccc;
+				margin-left: 60px;
+
+                &:nth-child(2):hover {
+                    color: #00aced;
+                }
+
+                &:nth-child(3):hover {
+                    color: #d34836;
+                }
+
+                &:nth-child(4):hover {
+                    color: #C92228;
+                }
+
+                &:nth-child(5):hover {
+                    color: #8a3ab9;
+                }
+
+                &:nth-child(6):hover {
+                    color: #eb4924;
+                }
+
+                &:nth-child(7):hover {
+                    color: #f26522;
+                }
+
+                &:focus {
+                	color: #ff8b38;
+                }
+			}
+		}
+	}
+}
+
+@media (max-width: 1374px) {
+	.brand-bar {
+		height: 250px;
+
+		.brand-bar__wrapper {
+			text-align: center;
+			flex-direction: column;
+			justify-content: center;
+			padding: 0;
+
+			.brand-bar__text {
+				width: 100%;
+			}
+
+			.brand-bar__icons {
+				width: 100%;
+
+				a {
+					margin: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 488px) {
+	.brand-bar {
+		height: 300px;
+	}
+}
